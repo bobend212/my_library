@@ -3,8 +3,8 @@ services:
     container_name: postgres-sql-my-library
     image: postgres
     environment:
-      POSGRES_USER: username
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: boob
+      POSTGRES_PASSWORD: pass
       PGDATA: /var/lib/postgresql/data
       POSTGRES_DB: my_library
     volumes:
@@ -20,8 +20,6 @@ services:
     ports:
       - 1080:1080
       - 1025:1025
-
-
 networks:
   spring-demo:
     driver: bridge

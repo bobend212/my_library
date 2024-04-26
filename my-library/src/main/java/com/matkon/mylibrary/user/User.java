@@ -112,7 +112,7 @@ public class User
         return enabled;
     }
 
-    private String getFullName()
+    public String getFullName()
     {
         return firstname + " " + lastname;
     }
